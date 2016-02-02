@@ -88,18 +88,18 @@ function udiff_stable($a, $b, $cmp)
 }
 
 /**
- * Get an element from the array or return $else
+ * Get an element from the array or return $default
  * @param array $data
  * @param string $key
- * @param mixed $else
+ * @param mixed $default
  * @return mixed
  */
-function get(array $data, $key, $else = null)
+function get(array $data, $key, $default = null)
 {
     if (array_key_exists($key, $data)) {
         return $data[$key];
     }
     else {
-        return $else;
+        return $default;
     }
 }
