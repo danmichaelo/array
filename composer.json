@@ -1,0 +1,36 @@
+{
+    "name": "array",
+    "description": "A collection of missing php array functions",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "http://github.com/ksbomj/array",
+    "keywords": [
+        "misc",
+        "array",
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "Andrii Tarykin",
+            "email": "ksbomj@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2"
+    },
+    "require-dev": {
+        "php": ">=5.5",
+        "phpunit/phpunit": "^4.0"
+    },
+    "autoload": {
+        "files": [
+            "src/array.php",
+            "src/array_global.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arr\\Tests\\": "tests"
+        }
+    }
+}
