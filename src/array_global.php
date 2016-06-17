@@ -54,7 +54,9 @@ function array_udiff_stable($a, $b, $cmp)
  * @param mixed $else
  * @return mixed
  */
- function array_get(array $data, $key, $else = null)
- {
-    return krak\arr\get($data, $key, $else);
+ if (! function_exists('array_get')) {
+     function array_get(array $data, $key, $else = null)
+     {
+        return krak\arr\get($data, $key, $else);
+     }
  }
